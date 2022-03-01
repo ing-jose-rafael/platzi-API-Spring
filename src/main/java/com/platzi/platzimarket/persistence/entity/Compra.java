@@ -2,6 +2,7 @@ package com.platzi.platzimarket.persistence.entity;
 
 import javax.persistence.*;
 import java.time.LocalDate;
+import java.time.LocalDateTime;
 
 @Entity
 @Table(name = "compras")
@@ -14,7 +15,7 @@ public class Compra {
     @Column(name = "id_cliente")
     private String idCliente;
 
-    private LocalDate fecha;
+    private LocalDateTime fecha;
 
     @Column(name = "medio_pago")
     private String medioPago;
@@ -39,11 +40,11 @@ public class Compra {
         this.idCliente = idCliente;
     }
 
-    public LocalDate getFecha() {
+    public LocalDateTime getFecha() {
         return fecha;
     }
 
-    public void setFecha(LocalDate fecha) {
+    public void setFecha(LocalDateTime fecha) {
         this.fecha = fecha;
     }
 
