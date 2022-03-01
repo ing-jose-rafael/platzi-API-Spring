@@ -31,6 +31,8 @@ public class Producto {
     @JoinColumn(name = "id_categoria",insertable = false,updatable = false)
     private Categoria categoria;
 
+    /** No se crea la relacion que representa producto compras*/
+
     public Integer getIdProducto() {
         return idProducto;
     }
